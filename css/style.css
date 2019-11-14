@@ -97,9 +97,14 @@ h2 {
   right: 0;
   bottom: 0;
   left: 100%;
-  transform: translateX(-100%);
   background: var(--text-secondary);
   opacity: 0.95;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+
+.navigation-open {
+  transform: translateX(-100%);
 }
 
 .close-nav {
@@ -108,7 +113,8 @@ h2 {
   cursor: pointer;
 }
 
-.nav-header {
+.nav-header,
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
