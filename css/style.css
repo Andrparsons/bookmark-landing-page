@@ -87,3 +87,49 @@ h2 {
 /* ==================
     general layout
 ===================== */
+
+/* navigation */
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  background: var(--text-secondary);
+  opacity: 0.95;
+}
+
+.close-nav {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 2em 1.75em 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
