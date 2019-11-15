@@ -52,18 +52,19 @@ h2 {
 .btn-primary {
   color: #fff;
   background-color: var(--primary-colour);
+  border: solid 2px var(--primary-colour);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #fff;
-  border: solid 2px var(--primary-colour);
   color: var(--primary-colour);
 }
 
 .btn-secondary {
   color: var(--text-secondary);
   background-color: #f7f7f7;
+  border: solid 2px #f7f7f7;
 }
 
 .btn-secondary:hover,
@@ -75,12 +76,12 @@ h2 {
 .btn-login {
   color: #fff;
   background-color: var(--secondary-colour);
+  border: solid 2px var(--secondary-colour);
 }
 
 .btn-login:hover,
 .btn-login:focus {
   background-color: #fff;
-  border: solid 2px var(--secondary-colour);
   color: var(--secondary-colour);
 }
 
