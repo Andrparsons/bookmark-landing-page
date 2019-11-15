@@ -107,7 +107,8 @@ h2 {
   transform: translateX(-100%);
 }
 
-.close-nav {
+.close-nav,
+.open-nav {
   border: 0;
   background: 0;
   cursor: pointer;
