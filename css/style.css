@@ -75,15 +75,26 @@ h2 {
 
 .btn-login {
   color: #fff;
-  background-color: var(--secondary-colour);
-  border: solid 2px var(--secondary-colour);
-  padding: 0.3em 0;
+  border: solid 2px #fff;
+  padding: 0.5em 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  background: none;
 }
 
-.btn-login:hover,
-.btn-login:focus {
-  background-color: #fff;
-  color: var(--secondary-colour);
+@media (min-width: 600px) {
+  .btn-login {
+    background-color: var(--secondary-colour);
+    border: solid 2px var(--secondary-colour);
+  }
+
+  .btn-login:hover,
+  .btn-login:focus {
+    background-color: #fff;
+    color: var(--secondary-colour);
+  }
 }
 
 /* ==================
@@ -125,12 +136,16 @@ h2 {
   margin: 2.2em 1.85em 0;
 }
 
-.nav-list {
-  display: flex;
+.nav-list,
+.nav-social {
   list-style: none;
-  margin-top: 2.25em;
+  display: flex;
   padding: 0;
-  height: 100%;
+}
+
+.nav-list {
+  margin: 2.25em 1.85em 0;
+
   align-items: center;
   flex-direction: column;
 }
@@ -148,6 +163,7 @@ h2 {
   display: inline-block;
   width: 100%;
   text-align: center;
+  padding: 0.85em 0;
 }
 
 .nav-item::before {
@@ -155,6 +171,18 @@ h2 {
   display: block;
   height: 1px;
   background: #f7f7f7;
-  margin: 0 1.85em;
   opacity: 0.3;
+}
+
+.nav-social {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-item {
+  margin: 0 0.75em;
+  font-size: 1.75rem;
+  color: #fff;
 }
