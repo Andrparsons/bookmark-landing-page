@@ -186,3 +186,34 @@ h2 {
   font-size: 1.75rem;
   color: #fff;
 }
+
+@media (min-width: 600px) {
+  .open-nav,
+  .nav-header,
+  .nav-social,
+  .nav-item::before {
+    display: none;
+  }
+
+  .header-content {
+    align-items: center;
+  }
+
+  .nav {
+    position: initial;
+    background: transparent;
+    width: auto;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .nav-link {
+    padding: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+}
