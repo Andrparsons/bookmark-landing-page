@@ -100,8 +100,16 @@ h2 {
 }
 
 /* ==================
-    general layout
+    Layout
 ===================== */
+
+/* general layout */
+
+.section-intro {
+  max-width: 550px;
+  text-align: center;
+  margin: 0 auto;
+}
 
 /* navigation */
 
@@ -231,4 +239,10 @@ h2 {
   .nav-item:first-child {
     margin: 0;
   }
+}
+
+/* hero */
+
+.hero {
+  display: flex;
 }
