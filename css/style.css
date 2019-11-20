@@ -198,6 +198,12 @@ h2 {
 }
 
 @media (min-width: 700px) {
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
   .open-nav,
   .nav-header,
   .nav-social,
@@ -207,6 +213,7 @@ h2 {
 
   .header-content {
     align-items: center;
+    margin: 2.5em 0 0;
   }
 
   .nav {
@@ -245,4 +252,8 @@ h2 {
 
 .hero {
   display: flex;
+}
+
+.hero-img {
+  object-fit: cover;
 }
