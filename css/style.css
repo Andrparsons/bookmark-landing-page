@@ -17,6 +17,26 @@ body {
   color: var(--text-primary);
 }
 
+/* image decoration */
+img {
+  width: 100%;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container::after {
+  content: "";
+  background-color: var(--primary-colour);
+  width: 100vw;
+  height: 75%;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  z-index: -1;
+}
+
 /* ==================
     Typography
 ===================== */
@@ -252,8 +272,9 @@ h2 {
 
 .hero {
   display: flex;
+  flex-direction: column;
 }
 
 .hero-img {
-  object-fit: cover;
+  order: -2;
 }
