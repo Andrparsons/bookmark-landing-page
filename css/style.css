@@ -15,26 +15,15 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text-primary);
+  overflow-x: hidden;
 }
 
-/* image decoration */
 img {
   width: 100%;
 }
 
-.img-container {
-  position: relative;
-}
-
-.img-container::after {
-  content: "";
-  background-color: var(--primary-colour);
-  width: 100vw;
-  height: 75%;
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  z-index: -1;
+p {
+  margin: 1.5em 0;
 }
 
 /* ==================
@@ -51,6 +40,7 @@ strong {
 
 h1 {
   font-size: 3rem;
+  margin: 0;
 }
 
 h2 {
@@ -62,7 +52,7 @@ h2 {
 .btn {
   font-family: inherit;
   border: 0;
-  padding: 1em 1.5em;
+  padding: 1em;
   cursor: pointer;
   font-weight: 500;
   border-radius: 5px;
@@ -144,6 +134,7 @@ h2 {
   opacity: 0.95;
   transform: translateX(0);
   transition: transform 0.3s;
+  z-index: 1;
 }
 
 .navigation-open {
@@ -268,13 +259,82 @@ h2 {
   }
 }
 
+/* image decoration */
+
+.img-container {
+  position: relative;
+}
+
+.img-container::after {
+  content: "";
+  background-color: var(--primary-colour);
+  width: 100vw;
+  height: 75%;
+  position: absolute;
+  z-index: -1;
+}
+
+.container-left-decoration::after {
+  right: 30%;
+  bottom: 0;
+  border-bottom-right-radius: 25%;
+  height: 85%;
+}
+
+.container-right-decoration::after {
+  left: 20%;
+  bottom: 0;
+  border-bottom-left-radius: 30%;
+}
+
 /* hero */
 
 .hero {
   display: flex;
   flex-direction: column;
+  margin-top: 4em;
+}
+
+.hero-content {
+  margin: 3em 1.85em;
+  text-align: center;
+  font-size: 0.975rem;
 }
 
 .hero-img {
   order: -2;
+  margin: 0 0.55em;
+}
+
+.hero-title {
+  font-size: 1.85rem;
+  line-height: 1.3;
+}
+
+/* features */
+
+.features {
+  margin: 0 1.85em;
+}
+
+.feature-img {
+  padding-bottom: 0.85em;
+}
+
+/* downloads */
+
+.downloads {
+  margin: 0 1.85em;
+}
+
+/* faq */
+
+.faq {
+  margin: 0 1.85em;
+}
+
+/* footer */
+
+.footer-content {
+  margin: 0 1.85em;
 }
