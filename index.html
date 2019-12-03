@@ -153,16 +153,34 @@
         </div>
 
         <div class="tabs">
-          <input type="radio" name="tabs" id="tab1" checked />
-          <label for="tab1">Simple Bookmarking</label>
+          <div role="tablist" aria-label="features tab">
+            <button
+              role="tab"
+              aria-selected="true"
+              id="bookmarking"
+              class="feature-btn"
+            >
+              Simple Bookmarking
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              id="searching"
+              class="feature-btn"
+            >
+              Speedy Searching
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              id="sharing"
+              class="feature-btn"
+            >
+              Easy Sharing
+            </button>
+          </div>
 
-          <input type="radio" name="tabs" id="tab2" />
-          <label for="tab2">Speedy Searching</label>
-
-          <input type="radio" name="tabs" id="tab3" />
-          <label for="tab3">Easy Sharing</label>
-
-          <div class="tab tab-content1">
+          <div role="tabpanel" aria-labelledby="bookmarking">
             <div class="tab-text">
               <h2 class="section-title">Bookmark in one click</h2>
 
@@ -183,7 +201,7 @@
             </div>
           </div>
 
-          <div class="tab tab-content2">
+          <div role="tabpanel" aria-labelledby="searching" hidden>
             <div class="tab-text">
               <h2 class="section-title">Intelligent search</h2>
 
@@ -203,7 +221,7 @@
             </div>
           </div>
 
-          <div class="tab tab-content3">
+          <div role="tabpanel" aria-labelledby="sharing" hidden>
             <div class="tab-text">
               <h2 class="section-title">Share your bookmarks</h2>
 

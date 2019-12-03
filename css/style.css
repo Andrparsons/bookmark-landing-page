@@ -336,6 +336,18 @@ h2 {
   padding-bottom: 0.85em;
 }
 
+/* feature-tabs */
+
+button[aria-selected="true"] {
+  background-color: var(--secondary-colour); /*testing attribs*/
+}
+
+.feature-btn:hover,
+.feature-btn:focus {
+  color: var(--secondary-colour);
+  cursor: pointer;
+}
+
 /* downloads */
 
 .downloads {
