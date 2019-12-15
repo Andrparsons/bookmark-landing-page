@@ -94,6 +94,31 @@ h2 {
   background: none;
 }
 
+.feature-btn {
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.feature-btn:hover,
+.feature-btn:focus {
+  color: var(--secondary-colour);
+  cursor: pointer;
+}
+
+button[aria-selected="true"]::after {
+  content: "";
+  background: var(--secondary-colour);
+  height: 3px;
+  width: 40%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 0.8em;
+}
+
 @media (min-width: 700px) {
   .btn-login {
     background-color: var(--secondary-colour);
@@ -337,15 +362,24 @@ h2 {
 }
 
 /* feature-tabs */
-
-button[aria-selected="true"] {
-  background-color: var(--secondary-colour); /*testing attribs*/
+ul[role="tablist"] {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
 }
 
-.feature-btn:hover,
-.feature-btn:focus {
-  color: var(--secondary-colour);
-  cursor: pointer;
+.tab-item {
+  width: 100%;
+}
+.tab-item::before,
+.tab-item:last-child::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--text-secondary);
+  opacity: 0.3;
 }
 
 /* downloads */
