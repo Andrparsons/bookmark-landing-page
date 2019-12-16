@@ -404,6 +404,18 @@ ul[role="tablist"] {
   opacity: 0.3;
 }
 
+.visible-tabpanel {
+  display: grid;
+}
+
+.hidden-tabpanel {
+  display: none;
+}
+
+.feature-img {
+  order: -2;
+}
+
 /* downloads */
 
 .downloads {
