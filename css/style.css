@@ -27,7 +27,15 @@ img {
 }
 
 p {
-  margin: 1.25em 0;
+  margin: 0;
+}
+
+/* custom focus is being used instead */
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 /* ==================
@@ -40,11 +48,11 @@ h3,
 strong {
   font-weight: 500;
   color: var(--text-secondary);
+  margin: 0;
 }
 
 h1 {
   font-size: 3rem;
-  margin: 0;
 }
 
 h2 {
@@ -73,6 +81,7 @@ h2 {
 .btn-primary:focus {
   background-color: #fff;
   color: var(--primary-colour);
+  outline: none;
 }
 
 .btn-secondary {
@@ -85,6 +94,7 @@ h2 {
 .btn-secondary:focus {
   background-color: #fff;
   border: solid 2px var(--text-secondary);
+  outline: none;
 }
 
 .btn-login {
@@ -109,6 +119,7 @@ h2 {
 .feature-btn:focus {
   color: var(--secondary-colour);
   cursor: pointer;
+  outline: none;
 }
 
 button[aria-selected="true"]::after {
@@ -135,6 +146,7 @@ button[aria-selected="true"]::after {
   .btn-login:focus {
     background-color: #fff;
     color: var(--secondary-colour);
+    outline: none;
   }
 }
 
@@ -148,6 +160,11 @@ button[aria-selected="true"]::after {
   max-width: 550px;
   text-align: center;
   margin: 0 auto;
+  font-size: 0.95rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
 }
 
 /* navigation */
@@ -276,6 +293,7 @@ button[aria-selected="true"]::after {
   .nav-link:hover,
   .nav-link:focus {
     color: var(--secondary-colour);
+    outline: none;
   }
 
   .nav-item {
