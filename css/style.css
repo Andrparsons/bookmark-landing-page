@@ -113,6 +113,10 @@ h2 {
   box-shadow: none;
   border-radius: 0;
   background-color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  padding: 1.15em;
 }
 
 .feature-btn:hover,
@@ -169,6 +173,7 @@ button[aria-selected="true"]::after {
 
 .section-text {
   margin-top: 0.5em;
+  line-height: 1.65;
 }
 
 /* navigation */
@@ -395,7 +400,7 @@ button[aria-selected="true"]::after {
 /* feature-tabs */
 
 .tabs {
-  margin-top: 1em;
+  margin-top: 2.5em;
 }
 
 ul[role="tablist"] {
@@ -418,12 +423,27 @@ ul[role="tablist"] {
   opacity: 0.3;
 }
 
+[role="tabpanel"] {
+  margin-top: 4em;
+}
+
 .visible-tabpanel {
   display: grid;
 }
 
 .hidden-tabpanel {
   display: none;
+}
+
+.tab-text {
+  max-width: 550px;
+  text-align: center;
+  margin: 2.5em auto 0;
+  font-size: 0.95rem;
+}
+
+.tab-button {
+  margin-top: 1.5em;
 }
 
 .feature-img {
@@ -433,7 +453,7 @@ ul[role="tablist"] {
 /* downloads */
 
 .downloads {
-  margin: 0 1.85em;
+  margin: 4em 1.85em 0;
 }
 
 /* faq */
@@ -444,6 +464,14 @@ ul[role="tablist"] {
 
 /* footer */
 
+footer {
+  background-color: var(--primary-colour);
+}
+
 .footer-content {
   margin: 0 1.85em;
+}
+
+.footer-nav {
+  background-color: var(--text-secondary);
 }
