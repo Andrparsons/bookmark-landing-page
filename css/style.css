@@ -148,7 +148,7 @@ button[aria-selected="true"]::after {
 }
 
 .btn-download {
-  margin: 1em 1.5em 1.65em;
+  margin: 0.95em 1.5em 1.45em;
 }
 
 @media (min-width: 700px) {
@@ -473,7 +473,7 @@ ul[role="tablist"] {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.5);
-  margin: 2.55em 0.8em 0;
+  margin: 2.45em 0.8em 0;
 }
 
 .card-img {
@@ -488,7 +488,7 @@ ul[role="tablist"] {
 }
 
 .card-title {
-  margin-top: 1.35em;
+  margin-top: 1.5em;
 }
 
 .card-subtitle {
@@ -501,7 +501,12 @@ ul[role="tablist"] {
 /* faq */
 
 .faq {
-  margin: 0 1.85em;
+  margin: 7.65em 1.85em 0;
+}
+
+.faq-title {
+  line-height: 1.225;
+  margin-bottom: 0.75em;
 }
 
 /* footer */
